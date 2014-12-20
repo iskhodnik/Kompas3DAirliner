@@ -1,0 +1,15 @@
+D:\learning\V Course\РСАПР\Airliner\Airliner\bin\Debug\Airliner.exe.config
+D:\learning\V Course\РСАПР\Airliner\Airliner\obj\Debug\Airliner.csprojResolveAssemblyReference.cache
+D:\learning\V Course\РСАПР\Airliner\Airliner\obj\Debug\MainWindow.baml
+D:\learning\V Course\РСАПР\Airliner\Airliner\obj\Debug\MainWindow.g.cs
+D:\learning\V Course\РСАПР\Airliner\Airliner\obj\Debug\App.g.cs
+D:\learning\V Course\РСАПР\Airliner\Airliner\obj\Debug\Airliner_MarkupCompile.cache
+D:\learning\V Course\РСАПР\Airliner\Airliner\obj\Debug\Airliner.g.resources
+D:\learning\V Course\РСАПР\Airliner\Airliner\obj\Debug\Airliner.Properties.Resources.resources
+D:\learning\V Course\РСАПР\Airliner\Airliner\obj\Debug\Airliner.csproj.GenerateResource.Cache
+D:\learning\V Course\РСАПР\Airliner\Airliner\bin\Debug\Airliner.exe
+D:\learning\V Course\РСАПР\Airliner\Airliner\bin\Debug\Airliner.pdb
+D:\learning\V Course\РСАПР\Airliner\Airliner\bin\Debug\KAPITypes.dll
+D:\learning\V Course\РСАПР\Airliner\Airliner\obj\Debug\Airliner.exe
+D:\learning\V Course\РСАПР\Airliner\Airliner\obj\Debug\Airliner.pdb
+D:\learning\V Course\РСАПР\Airliner\Airliner\bin\Debug\Wheel.dll

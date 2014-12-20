@@ -1,0 +1,7 @@
+D:\learning\V Course\РСАПР\Airliner\UnitTestProject\bin\Debug\UnitTestProject.dll
+D:\learning\V Course\РСАПР\Airliner\UnitTestProject\bin\Debug\UnitTestProject.pdb
+D:\learning\V Course\РСАПР\Airliner\UnitTestProject\bin\Debug\Airliner.exe
+D:\learning\V Course\РСАПР\Airliner\UnitTestProject\bin\Debug\Airliner.pdb
+D:\learning\V Course\РСАПР\Airliner\UnitTestProject\obj\Debug\UnitTestProject.csprojResolveAssemblyReference.cache
+D:\learning\V Course\РСАПР\Airliner\UnitTestProject\obj\Debug\UnitTestProject.dll
+D:\learning\V Course\РСАПР\Airliner\UnitTestProject\obj\Debug\UnitTestProject.pdb

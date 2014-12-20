@@ -1,0 +1,47 @@
+﻿<Window x:Class="Airliner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Построение модели пассажирского самолёта" Height="331.5" Width="543"
+        Icon="Icon.png">
+    <Grid>
+        <Grid Background="#FFCCD8DC" Margin="0,-1,0,1">
+            <Button x:Name="Go" Content="Построить" HorizontalAlignment="Left" Margin="10,262,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click_1" Height="30"/>
+            <Label Content="Длина самолёта:" HorizontalAlignment="Left" Margin="10,12,0,0" VerticalAlignment="Top" Width="100"/>
+            <Label Content="Диаметр фюзеляжа:" HorizontalAlignment="Left" Margin="10,43,0,0" VerticalAlignment="Top" Width="121"/>
+            <Label Content="Размах крыла:" HorizontalAlignment="Left" Margin="10,74,0,0" VerticalAlignment="Top"/>
+            <Label Content="Горизонтальное расположение крыла на корпусе:" HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top"/>
+            <Label Content="Угол стреловидности крыла:" HorizontalAlignment="Left" Margin="10,133,0,0" VerticalAlignment="Top" Width="167"/>
+            <Label Content="Высота вертикального стабилизатора:" HorizontalAlignment="Left" Margin="10,164,0,0" VerticalAlignment="Top"/>
+            <Label Content="Размах горизонтального оперения:" HorizontalAlignment="Left" Margin="10,195,0,0" VerticalAlignment="Top"/>
+            <Label Content="Количество двигателей:" HorizontalAlignment="Left" Margin="10,226,0,0" VerticalAlignment="Top" Width="141"/>
+            <ComboBox x:Name="QuantityEngine" HorizontalAlignment="Left" Margin="302,226,0,0" VerticalAlignment="Top" Width="214" Text="2" IsSynchronizedWithCurrentItem="False" SelectedIndex="0">
+                <ComboBoxItem Content="2"/>
+                <ComboBoxItem Content="4"/>
+                <ComboBoxItem Content="6"/>
+                <ComboBoxItem Content="8"/>
+            </ComboBox>
+            
+            
+            
+            
+            <Slider x:Name="SliderHorizPosWing" HorizontalAlignment="Left" Margin="302,105,0,0" VerticalAlignment="Top" Width="191" SmallChange="1" Minimum="20" TickPlacement="TopLeft" IsSnapToTickEnabled="True" Value="33" Maximum="46"/>
+            <Slider x:Name="SliderSweepbackAng" HorizontalAlignment="Left" Margin="302,133,0,0" VerticalAlignment="Top" Width="191" Maximum="40" Minimum="20" SmallChange="0.5" IsSnapToTickEnabled="True" TickPlacement="TopLeft" LargeChange="0.5" TickFrequency="0.5" Value="35"/>
+            <Slider x:Name="SliderHeidhtOfKeel" HorizontalAlignment="Left" Margin="302,164,0,0" VerticalAlignment="Top" Width="191" Maximum="15" Minimum="5" SmallChange="0.5" TickPlacement="TopLeft" IsSnapToTickEnabled="True" Value="9" LargeChange="0.5" TickFrequency="0.5"/>
+            <Slider x:Name="SliderLengthOfHorizStabil" HorizontalAlignment="Left" Margin="302,195,0,0" VerticalAlignment="Top" Width="191" Minimum="10" SmallChange="0.5" TickPlacement="TopLeft" IsSnapToTickEnabled="True" Maximum="30" Value="20" LargeChange="0.5"/>
+
+            <Slider x:Name="SliderWingpan" HorizontalAlignment="Left" Margin="302,74,0,0" VerticalAlignment="Top" Width="191" Minimum="25" Maximum="{Binding Value, ElementName=SliderLengthAir, Mode=OneWay}" SmallChange="1" TickPlacement="TopLeft" IsSnapToTickEnabled="True" Value="50" ValueChanged="SliderWingpan_ValueChanged" />
+            <Slider x:Name="SliderDiameterFus" HorizontalAlignment="Left" Margin="302,43,0,0" VerticalAlignment="Top" Width="191" Minimum="6" Maximum="18" IsSnapToTickEnabled ="True" TickPlacement="TopLeft" TickFrequency="0.5" Value="6" LargeChange="0.5" SmallChange="0.5"/>
+            <Slider x:Name="SliderLengthAir" HorizontalAlignment="Left" Margin="302,12,0,0" VerticalAlignment="Top" Width="191" Maximum="90" Minimum="30" SmallChange="1" IsSnapToTickEnabled ="True" TickPlacement="TopLeft" Value="60" ValueChanged="SliderLengthAir_ValueChanged"/>
+            
+
+            <Label x:Name="LableLengthAir" Content="{Binding ElementName=SliderLengthAir, Path=Value, Mode=OneWay}" HorizontalAlignment="Left" Margin="493,8,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="LableDiameterFus" Content="{Binding ElementName=SliderDiameterFus, Path=Value, Mode=OneWay}" HorizontalAlignment="Left" Margin="493,39,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="LableWingpan" Content="{Binding ElementName=SliderWingpan, Path=Value, Mode=OneWay}" HorizontalAlignment="Left" Margin="493,70,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="LableHorizPosWing" Content="{Binding ElementName=SliderHorizPosWing, Path=Value, Mode=OneWay}" HorizontalAlignment="Left" Margin="493,101,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="LableSweepbackAng" Content="{Binding ElementName=SliderSweepbackAng, Path=Value, Mode=OneWay}" HorizontalAlignment="Left" Margin="493,129,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="LableHeidhtOfKeel" Content="{Binding ElementName=SliderHeidhtOfKeel, Path=Value, Mode=OneWay}" HorizontalAlignment="Left" Margin="493,160,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="LableLengthOfHorizStabil" Content="{Binding ElementName=SliderLengthOfHorizStabil, Path=Value, Mode=OneWay}" HorizontalAlignment="Left" Margin="493,191,0,0" VerticalAlignment="Top"/>    
+        </Grid>
+
+    </Grid>
+</Window>
