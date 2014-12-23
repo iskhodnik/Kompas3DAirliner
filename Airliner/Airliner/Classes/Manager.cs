@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Windows;
 using Kompas6API5;
-using System.Diagnostics;
 
 namespace Airliner.Classes
 {
@@ -23,22 +22,14 @@ namespace Airliner.Classes
         /// <param name="infAirliner"></param>
         public void InitializeModel(InfAirliner infAirliner)
         {
-            OpenKompas3D();
-            var stopwatch = new Stopwatch();
-            stopwatch.Start();
-
-            for (var i = 1; i <= 5; i++)
+            if (_kompas != null)
             {
-                var doc3D = (ksDocument3D)_kompas.Document3D();
+                var doc3D = (ksDocument3D) _kompas.Document3D();
                 doc3D.Create(false, false);
-                doc3D = (ksDocument3D)_kompas.ActiveDocument3D();
+                doc3D = (ksDocument3D) _kompas.ActiveDocument3D();
                 _creadeModel = new CreatingModel(doc3D, _kompas, infAirliner);
                 _creadeModel.CreateModel();
             }
-            stopwatch.Stop();
-            MessageBox.Show("Количество милисекунд " + stopwatch.ElapsedMilliseconds);
-
-            //_creadeModel.CreateModel();
         }
 
         /// <summary>
@@ -46,24 +37,33 @@ namespace Airliner.Classes
         /// </summary>
         public void OpenKompas3D()
         {
+            if (_kompas == null)
+            {
+                var type = Type.GetTypeFromProgID("KOMPAS.Application.5");
+                _kompas = (KompasObject)Activator.CreateInstance(type);
+            }
             try
             {
-                if (_kompas == null)
-                {
-                    var type = Type.GetTypeFromProgID("KOMPAS.Application.5");
-                    _kompas = (KompasObject)Activator.CreateInstance(type);
-                }
-
                 if (_kompas != null)
                 {
                     _kompas.Visible = true;
                     _kompas.ActivateControllerAPI();
                 }
             }
-            catch
+            catch(Exception)
             {
                 MessageBox.Show("Ошибка! Компас-3D не открывается!");
+                throw new Exception();
+                
             }
+        }
+
+        /// <summary>
+        /// Обнуление компаса
+        /// </summary>
+        public void KompasReset()
+        {
+            _kompas = null;
         }
     }
 }

@@ -2,10 +2,16 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTestProject
-{
+{   
+    /// <summary>
+    /// Тестирование методов класса InfAirliner
+    /// </summary>
     [TestClass]
     public class InfAirUT
     {
+        /// <summary>
+        /// Тестирование конструктора. Инициализация поля LengthOfAircraft
+        /// </summary>
         [TestMethod]
         public void TestLengthOfAircraft()
         {
@@ -13,6 +19,9 @@ namespace UnitTestProject
             Assert.AreEqual(infAir.LengthOfAircraft, 1);
         }
 
+        /// <summary>
+        /// Тестирование конструктора. Инициализация поля FuselageDiameter
+        /// </summary>
         [TestMethod]
         public void TestFuselageDiameter()
         {
@@ -20,6 +29,9 @@ namespace UnitTestProject
             Assert.AreEqual(infAir.FuselageDiameter, 2);
         }
 
+        /// <summary>
+        /// Тестирование конструктора. Инициализация поля Wingspan
+        /// </summary>
         [TestMethod]
         public void TestWingspan()
         {
@@ -27,6 +39,9 @@ namespace UnitTestProject
             Assert.AreEqual(infAir.Wingspan, 3);
         }
 
+        /// <summary>
+        /// Тестирование конструктора. Инициализация поля HorizontalPositionWing
+        /// </summary>
         [TestMethod]
         public void TestHorizontalPositionWing()
         {
@@ -34,6 +49,9 @@ namespace UnitTestProject
             Assert.AreEqual(infAir.HorizontalPositionWing, 4);
         }
 
+        /// <summary>
+        /// Тестирование конструктора. Инициализация поля VerticalPositionWing
+        /// </summary>
         [TestMethod]
         public void TestVerticalPositionWing()
         {
@@ -41,6 +59,9 @@ namespace UnitTestProject
             Assert.AreEqual(infAir.VerticalPositionWing, 5);
         }
 
+        /// <summary>
+        /// Тестирование конструктора. Инициализация поля SweepbackAngle
+        /// </summary>
         [TestMethod]
         public void TestSweepbackAngle()
         {
@@ -48,6 +69,9 @@ namespace UnitTestProject
             Assert.AreEqual(infAir.SweepbackAngle, 6);
         }
 
+        /// <summary>
+        /// Тестирование конструктора. Инициализация поля HeightOfKeel
+        /// </summary>
         [TestMethod]
         public void TestHeightOfKeel()
         {
@@ -55,6 +79,9 @@ namespace UnitTestProject
             Assert.AreEqual(infAir.HeightOfKeel, 7);
         }
 
+        /// <summary>
+        /// Тестирование конструктора. Инициализация поля LengthOfHorizontalStabilizer
+        /// </summary>
         [TestMethod]
         public void TestLengthOfHorizontalStabilizer()
         {
@@ -62,6 +89,9 @@ namespace UnitTestProject
             Assert.AreEqual(infAir.LengthOfHorizontalStabilizer, 8);
         }
 
+        /// <summary>
+        /// Тестирование конструктора. Инициализация поля TypeQuantityOfEngine
+        /// </summary>
         [TestMethod]
         public void TestTypeQuantityOfEngine()
         {

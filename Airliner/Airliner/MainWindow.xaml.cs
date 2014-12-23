@@ -43,7 +43,16 @@ namespace Airliner
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             ChangeInfAirliner();
-            Manager.OpenKompas3D();
+            try
+            {
+                Manager.OpenKompas3D();
+            }
+            catch (Exception)
+            {
+                Manager.KompasReset();
+                Manager.OpenKompas3D();
+            }
+            
             Manager.InitializeModel(InfAirliner);
         }
 

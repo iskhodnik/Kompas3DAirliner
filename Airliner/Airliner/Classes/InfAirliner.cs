@@ -5,9 +5,24 @@
     /// </summary>
     public enum TypesQuantityOfEngine
     {
+        /// <summary>
+        /// Два двигателя
+        /// </summary>
         Two = 2,
+
+        /// <summary>
+        /// Четыре двигателя
+        /// </summary>
         Four = 4,
+
+        /// <summary>
+        /// Шесть двигателей
+        /// </summary>
         Six = 6,
+
+        /// <summary>
+        /// Восемь двигателей
+        /// </summary>
         Eight = 8
     }
 
@@ -57,7 +72,7 @@
         public double LengthOfHorizontalStabilizer;
 
         /// <summary>
-        /// Количество двигал=телей
+        /// Количество двигателей
         /// </summary>
         public TypesQuantityOfEngine TypeQuantityOfEngine;
 

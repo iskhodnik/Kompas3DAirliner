@@ -58,10 +58,10 @@ namespace Airliner.Classes
         public void CreateModel()
         {
             CreateFus();
-            CreateWing();
+            /*CreateWing();
             CreateEngines();
             CreateTail();
-            CreateChassis();
+            CreateChassis();*/
         }
 
         /// <summary>
@@ -145,7 +145,11 @@ namespace Airliner.Classes
             
             _entityCollection = new List<ksEntity>
                 {
-                    CreateCircle((_infAirliner.Wingspan * 0.5) - (engPos * curEng), - ((_infAirliner.VerticalPositionWing * 0.366) + (engPos * curEng) * 0.12), _infAirliner.FuselageDiameter * 0.0917, MovePlane(GetPlane(Obj3dType.o3d_planeXOY), true, horizLocationEng)),
+                    CreateCircle((_infAirliner.Wingspan * 0.5) - (engPos * curEng), 
+                    - ((_infAirliner.VerticalPositionWing * 0.366) + (engPos * curEng) * 0.12), 
+                    _infAirliner.FuselageDiameter * 0.0917, 
+                    MovePlane(GetPlane(Obj3dType.o3d_planeXOY), 
+                    true, horizLocationEng)),
                     CreateCircle((_infAirliner.Wingspan * 0.5) - (engPos * curEng), - ((_infAirliner.VerticalPositionWing * 0.366) + (engPos * curEng) * 0.12), _infAirliner.FuselageDiameter * 0.15, MovePlane(GetPlane(Obj3dType.o3d_planeXOY), true, horizLocationEng + (_infAirliner.LengthOfAircraft * 0.093))),
                     CreateCircle((_infAirliner.Wingspan * 0.5) - (engPos * curEng), - ((_infAirliner.VerticalPositionWing * 0.366) + (engPos * curEng) * 0.12), _infAirliner.FuselageDiameter * 0.115, MovePlane(GetPlane(Obj3dType.o3d_planeXOY), true, horizLocationEng + (_infAirliner.LengthOfAircraft * 0.123)))
                 };
@@ -227,6 +231,7 @@ namespace Airliner.Classes
                         GetPlane(Obj3dType.o3d_planeYOZ));
             
         }
+
         /// <summary>
         /// Создание боковых окон
         /// </summary>
