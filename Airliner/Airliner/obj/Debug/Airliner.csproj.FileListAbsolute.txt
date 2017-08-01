@@ -13,3 +13,13 @@ D:\learning\V Course\РСАПР\Airliner\Airliner\bin\Debug\KAPITypes.dll
 D:\learning\V Course\РСАПР\Airliner\Airliner\obj\Debug\Airliner.exe
 D:\learning\V Course\РСАПР\Airliner\Airliner\obj\Debug\Airliner.pdb
 D:\learning\V Course\РСАПР\Airliner\Airliner\bin\Debug\Wheel.dll
+C:\Users\Nik\Source\Repos\Kompas3DAirliner\Airliner\Airliner\obj\Debug\Airliner.csprojResolveAssemblyReference.cache
+C:\Users\Nik\Source\Repos\Kompas3DAirliner\Airliner\Airliner\obj\Debug\MainWindow.baml
+C:\Users\Nik\Source\Repos\Kompas3DAirliner\Airliner\Airliner\obj\Debug\MainWindow.g.cs
+C:\Users\Nik\Source\Repos\Kompas3DAirliner\Airliner\Airliner\obj\Debug\App.g.cs
+C:\Users\Nik\Source\Repos\Kompas3DAirliner\Airliner\Airliner\obj\Debug\Airliner_MarkupCompile.cache
+C:\Users\Nik\Source\Repos\Kompas3DAirliner\Airliner\Airliner\obj\Debug\Airliner.g.resources
+C:\Users\Nik\Source\Repos\Kompas3DAirliner\Airliner\Airliner\obj\Debug\Airliner.Properties.Resources.resources
+C:\Users\Nik\Source\Repos\Kompas3DAirliner\Airliner\Airliner\obj\Debug\Airliner.csproj.GenerateResource.Cache
+C:\Users\Nik\Source\Repos\Kompas3DAirliner\Airliner\Airliner\obj\Debug\Airliner.exe
+C:\Users\Nik\Source\Repos\Kompas3DAirliner\Airliner\Airliner\obj\Debug\Airliner.pdb
