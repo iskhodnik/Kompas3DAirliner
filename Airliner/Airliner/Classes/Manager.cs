@@ -63,6 +63,8 @@ namespace Airliner.Classes
         /// </summary>
         public void KompasReset()
         {
+            var test = "";
+            test = "test";
             _kompas = null;
         }
     }
